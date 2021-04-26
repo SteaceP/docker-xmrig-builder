@@ -5,7 +5,7 @@ ENV SOURCE="https://github.com/xmrig/xmrig.git"
 # Set timezone
 RUN export DEBIAN_FRONTEND=noninteractive; \
     apt-get update; \
-    ln -fs /usr/share/zoneinfo/Australia/Melbourne /etc/localtime; \
+    ln -fs /usr/share/zoneinfo/Canada/Toronto /etc/localtime; \
     apt-get install -y tzdata; \
     dpkg-reconfigure --frontend noninteractive tzdata; \
     apt-get clean all
